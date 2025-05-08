@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1746370639 source:c:\projects\programacao-computadores\root\sort\main.c
+	"sort.h"
+	"input.h"
+
+1746307685 c:\projects\programacao-computadores\root\sort\sort.h
+	<stdlib.h>
+
+1746307465 source:c:\projects\programacao-computadores\root\sort\sort.c
+	"sort.h"
+
+1746370522 c:\projects\programacao-computadores\root\sort\input.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1746370619 source:c:\projects\programacao-computadores\root\sort\input.c
+	"input.h"
+
+1746633577 source:d:\01 pessoal\unibrasil\c\sort\input.c
+	"input.h"
+
+1746633656 d:\01 pessoal\unibrasil\c\sort\input.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1746633254 source:d:\01 pessoal\unibrasil\c\sort\main.c
+	"sort.h"
+	"input.h"
+
+1746633804 d:\01 pessoal\unibrasil\c\sort\sort.h
+	<stdlib.h>
+
+1746580064 source:d:\01 pessoal\unibrasil\c\sort\sort.c
+	"sort.h"
+
+1746633577 source:d:\01 pessoal\unibrasil\tp0\tp0-2024203247\sort\input.c
+	"input.h"
+
+1746653502 d:\01 pessoal\unibrasil\tp0\tp0-2024203247\sort\input.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1746634059 source:d:\01 pessoal\unibrasil\tp0\tp0-2024203247\sort\main.c
+	"sort.h"
+	"input.h"
+
+1746633804 d:\01 pessoal\unibrasil\tp0\tp0-2024203247\sort\sort.h
+	<stdlib.h>
+
+1746634935 source:d:\01 pessoal\unibrasil\tp0\tp0-2024203247\sort\sort.c
+	"sort.h"
+
