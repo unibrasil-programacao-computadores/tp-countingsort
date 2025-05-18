@@ -24,9 +24,6 @@ void sort_ordered_arrays(void (*algorithm) (double* arr, long arr_size), const c
 void sort_reverse_ordered_arrays(void (*algorithm) (double* arr, long arr_size), const char* name);
 
 
-//=================================IA===========================
-long busca_binaria(double* arr, long start, long end, double x);
-void insertionsort_binario(double* arr, long arr_size);
 
 
 #endif // INPUT_H_INCLUDED

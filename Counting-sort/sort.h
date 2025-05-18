@@ -11,9 +11,15 @@ void insertionsort(double* arr, long arr_size);
 void shellsort(double* arr, long arr_size);
 void mergesort(double* arr, long arr_size);
 void heapsort(double* arr, long arr_size);
-
+//==============================COUNTING SORT=======================================
 void countingsort(double* arr, long arr_size);
 void radixsort(double* arr, long arr_size);
 void bucketsort(double* arr, long arr_size);
+
+
+
+//=================================IA===========================
+long busca_binaria(double* arr, long start, long end, double x);
+void insertionsort_binario(double* arr, long arr_size);s
 
 #endif // SORT_H_INCLUDED

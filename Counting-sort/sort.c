@@ -51,6 +51,16 @@ void insertionsort(double* arr, long arr_size){
         arr[j+1] = x;
     }
 }
+//================================COUNTING SORT=======================================================
+//================================COUNTING SORT=======================================================
+//================================COUNTING SORT=======================================================
+
+void countingsort(double* arr, long arr_size){
+
+}
+
+
+
 //=================Soluções feitas por IA para achar um insertion sem sentinela==================
 //implementação de insertionsort e que não use sentinela
 
