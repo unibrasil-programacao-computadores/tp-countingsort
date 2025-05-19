@@ -7,4 +7,5 @@ Nome:Nathalli Vitoria Santos Gonçalves    Matricula:2025106294
 
 Referências para o trabalho:
 Video de funcionamento do counting sort: (https://www.youtube.com/watch?v=5enmTcTnJ7U).
+Video de funcionamento do counting sort oque foi baseado a apresentação:(https://www.youtube.com/watch?v=3bm7NgKJpj4&t=5s).
 [Slides do professor do livro _Projeto de Algoritmos – Cap.4 Ordenação – Seção 4.1.6_](Counting-sort/docs/cap4-94-99.pdf).
