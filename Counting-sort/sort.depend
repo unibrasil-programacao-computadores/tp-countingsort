@@ -53,3 +53,21 @@
 1746634935 source:d:\01 pessoal\unibrasil\tp0\tp0-2024203247\sort\sort.c
 	"sort.h"
 
+1746633577 source:d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\counting-sort\input.c
+	"input.h"
+
+1747610419 d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\counting-sort\input.h
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1748789112 source:d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\counting-sort\main.c
+	"sort.h"
+	"input.h"
+
+1748788474 d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\counting-sort\sort.h
+	<stdlib.h>
+
+1748791928 source:d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\counting-sort\sort.c
+	"sort.h"
+
