@@ -16,6 +16,19 @@ int main()
     printf("\n");
 
 
+    double arr2[5] = {3.142, 2.718, 1.414, 2.236, 1.618};
+
+    int tamanho2 = 5;
+    countingsort2(arr2, tamanho2);
+
+    printf("array ordenado:\n");
+    for(int i = 0; i < tamanho2; i++) {
+        printf("%.3f ", arr2[i]);
+    }
+    printf("\n");
+
+
+
 //    sort_base_array(quicksort, "Quicksort");
 //    sort_ordered_arrays(quicksort, "Quicksort");
 //    sort_reverse_ordered_arrays(quicksort, "Quicksort");

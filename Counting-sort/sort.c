@@ -91,6 +91,59 @@ void countingsort(int* arr, long arr_size)
         arr[i] = arrB[i];
     }
 }
+//counting para valores double primeiro multiplica por mil pra virar inteiro e depois divide para voltar a ser double
+void countingsort2(double* arr, long arr_size) {
+
+    int conversor = 1000;
+
+    // Converte para inteiro
+    for (int i = 0; i < arr_size; i++) {
+        arr[i] = (arr[i] * conversor);
+    }
+
+    int maior = arr[0];
+    int menor = arr[0];
+
+    for(int i = 0; i < arr_size; i++) {
+        if(arr[i] > maior) {
+            maior = arr[i];
+        } else if(arr[i] < menor) {
+            menor = arr[i];
+        }
+    }
+
+    int k = maior - menor + 1;
+    int arrC[k];
+
+    for(int i = 0; i < k; i++) {
+        arrC[i] = 0;
+    }
+
+    //vetor contagems
+    for(int i = 0; i < arr_size; i++) {
+        arrC[(int)arr[i] - menor] += 1;
+    }
+
+    //loop para a cumulativA
+    for(int i = 1; i < k; i++) {
+        arrC[i] += arrC[i - 1];
+    }
+
+    // ordenando
+    double arrB[arr_size];
+    for(int i = arr_size - 1; i >= 0; i--) {
+        arrB[arrC[(int)arr[i] - menor] - 1] = arr[i];
+        arrC[(int)arr[i] - menor] -= 1;
+    }
+
+    // convertendo de volta em double
+    for(int i = 0; i < arr_size; i++) {
+        arr[i] = arrB[i] / conversor;
+    }
+}
+
+
+
 
 
 
