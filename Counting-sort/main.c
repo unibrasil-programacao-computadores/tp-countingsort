@@ -16,7 +16,7 @@ int main()
     printf("\n");
 
 
-    double arr2[5] = {3.142, 2.718, 1.414, 2.236, 1.618};
+    double arr2[5] = {3.251, 2.718, 1.445, 2.286, 1.635};
 
     int tamanho2 = 5;
     countingsort2(arr2, tamanho2);
