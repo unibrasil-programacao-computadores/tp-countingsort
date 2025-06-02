@@ -142,7 +142,22 @@ void countingsort2(double* arr, long arr_size) {
     }
 }
 
+void countingsort3(double* arr, long arr_size, int k){
 
+    int i;
+    
+    for ( i = 0; i <= k; i++)arrC[i] = 0;
+    for ( i = 1; i <= n; i++)arrC[arrA[i ].Chave] = arrC[arrA[i ].Chave] + 1;
+    for ( i = 1; i <= k; i++)arrC[i] = arrC[i] + arrC[i - 1];
+    for ( i = n; i > 0; i--)
+    { arrB[arrC[arrA[ i ].Chave]] = arrA[ i ];
+    arrC[arrA[ i ].Chave] = arrC[arrA[ i ].Chave] - 1;
+    }
+    for ( i = 1; i <= n; i++)
+    arrA[ i ] = arrB[i ];
+
+
+}
 
 
 
