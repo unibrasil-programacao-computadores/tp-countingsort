@@ -10,7 +10,8 @@ int main()
     countingsort(arr, tamanho);
 
     printf("array ordenado:\n");
-    for(int i = 0; i < tamanho; i++) {
+    for(int i = 0; i < tamanho; i++)
+    {
         printf("%d ", arr[i]);
     }
     printf("\n");
@@ -22,23 +23,20 @@ int main()
     countingsort2(arr2, tamanho2);
 
     printf("array ordenado:\n");
-    for(int i = 0; i < tamanho2; i++) {
+    for(int i = 0; i < tamanho2; i++)
+    {
         printf("%.3f ", arr2[i]);
     }
     printf("\n");
 
 
 
-//    sort_base_array(quicksort, "Quicksort");
-//    sort_ordered_arrays(quicksort, "Quicksort");
-//    sort_reverse_ordered_arrays(quicksort, "Quicksort");
-//    sort_uniform_arrays(quicksort, "Quicksort");
+    //sort_base_array(countingsort2, "Countingsort");
+    //sort_ordered_arrays(countingsort2, "Countingsort");
+    //sort_reverse_ordered_arrays(quicksort, "Quicksort");
+     //sort_uniform_arrays(countingsort2, "Countingsort");
 
 
-//    sort_base_array(insertionsort_binario, "insertionsort_Binario");
-//    sort_ordered_arrays(insertionsort_binario, "insertionsort_Binario");
-//    sort_reverse_ordered_arrays(insertionsort_binario, "insertionsort_Binario");
-//    sort_uniform_arrays(insertionsort_binario, "insertionsort_Binario");
 
 
     return 0;

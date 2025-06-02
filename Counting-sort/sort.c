@@ -94,7 +94,7 @@ void countingsort(int* arr, long arr_size)
 //counting para valores double primeiro multiplica por mil pra virar inteiro e depois divide para voltar a ser double
 void countingsort2(double* arr, long arr_size) {
 
-    int conversor = 1000;
+    int conversor = 100000;
 
     // Converte para inteiro
     for (int i = 0; i < arr_size; i++) {
