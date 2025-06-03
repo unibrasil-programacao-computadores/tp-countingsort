@@ -40,7 +40,7 @@ void selectionsort(double* arr, long arr_size)
 
 
 //================================COUNTING SORT=======================================================
-
+//bom dia
 void countingsort(int* arr, long arr_size)
 {
     int maior = arr[0];
