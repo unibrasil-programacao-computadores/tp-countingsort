@@ -15,6 +15,7 @@ void heapsort(double* arr, long arr_size);
 //==============================COUNTING SORT=======================================
 void countingsort(int* arr, long arr_size);
 void countingsort2(double* arr, long arr_size);
+void countingsort3(double* arr, long arr_size);
 //==============================COUNTING SORT=======================================
 
 
