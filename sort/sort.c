@@ -40,8 +40,57 @@ void selectionsort(double* arr, long arr_size)
 
 
 //================================COUNTING SORT=======================================================
-//bom dia
-void countingsort(int* arr, long arr_size)
+
+
+void countingsort(double* arr, long arr_size) {
+
+    double menor = arr[0];
+    double maior = arr[0];
+
+
+    for (int i = 1; i < arr_size; i++) {
+        if (arr[i] > maior){
+           maior = arr[i];
+        }
+        if (arr[i] < menor){
+            menor = arr[i];
+        }
+    }
+
+    long k = (long)(maior - menor) + 1;
+
+    // `malloc` para evitar estouro de pilha
+    long* arrC = (long*)malloc(k * sizeof(long));
+    if (!arrC) {
+        printf("memoria insuficiente\n");
+        return;
+    }
+
+    //  `arrC` com zeros
+    for (long i = 0; i < k; i++){
+        arrC[i] = 0;
+    }
+
+    // prreencher arrC
+    for (int i = 0; i < arr_size; i++) {
+        arrC[(long)(arr[i] - menor)]++;
+    }
+
+
+    // Ordenar os valores
+    int index = 0;
+    for (long i = 0; i < k; i++) {
+        while (arrC[i] > 0) {
+            arr[index++] = menor + i;
+            arrC[i]--;
+        }
+    }
+
+    free(arrC); // Liberar memória alocada
+}
+
+
+void countingsort2(int* arr, long arr_size)
 {
     int maior = arr[0];
     int menor = arr[0];
@@ -92,129 +141,10 @@ void countingsort(int* arr, long arr_size)
 }
 
 
-//counting para valores double primeiro multiplica por mil pra virar inteiro e depois divide para voltar a ser double
-void countingsort2(double* arr, long arr_size) {
-
-    int conversor = 1000;
-
-    // Converte para inteiro
-    for (int i = 0; i < arr_size; i++) {
-        arr[i] = (arr[i] * conversor);
-    }
-
-    int maior = arr[0];
-    int menor = arr[0];
-
-    for(int i = 0; i < arr_size; i++) {
-        if(arr[i] > maior) {
-            maior = arr[i];
-        } else if(arr[i] < menor) {
-            menor = arr[i];
-        }
-    }
-
-    int k = maior - menor + 1;
-    int arrC[k];
-
-    for(int i = 0; i < k; i++) {
-        arrC[i] = 0;
-    }
-
-    //vetor contagems
-    for(int i = 0; i < arr_size; i++) {
-        arrC[(int)arr[i] - menor] += 1;
-    }
-
-    //loop para a cumulativA
-    for(int i = 1; i < k; i++) {
-        arrC[i] += arrC[i - 1];
-    }
-
-    // ordenando
-    double arrB[arr_size];
-    for(int i = arr_size - 1; i >= 0; i--) {
-        arrB[arrC[(int)arr[i] - menor] - 1] = arr[i];//aqui ta trucnando
-        arrC[(int)arr[i] - menor] -= 1;
-    }
-
-    // convertendo de volta em double
-    for(int i = 0; i < arr_size; i++) {
-        arr[i] = arrB[i] / conversor;
-    }
-}
-
-void countingsort3(double* arr, long arr_size) {
-    int conversor = 100;
-
-
-    int i;
-    
-    for ( i = 0; i <= k; i++){
-        arrC[i] = 0;
-    int arr_int[arr_size];// para inteiros
-
-    for (int i = 0; i < arr_size; i++) {
-        arr_int[i] = (int)(arr[i]) / conversor;
-    }
-
-    for ( i = 1; i <= arr_size; i++){    
-        arrC[arrA[i ].Chave] = arrC[arrA[i ].Chave] + 1;
-    }
-
-    for ( i = 1; i <= k; i++){
-        arrC[i] = arrC[i] + arrC[i - 1];
-    }
-
-    for ( i = arr_size; i > 0; i--){
-         arrB[arrC[arrA[ i ].Chave]] = arrA[ i ];
-        arrC[arrA[ i ].Chave] = arrC[arrA[ i ].Chave] - 1;
-
-    }
-
-    for ( i = 1; i <= arr_size; i++){
-        arrA[ i ] = arrB[i ];
-
-    }
-
-    int maior = arr_int[0];
-    int menor = arr_int[0];
-
-    for (int i = 0; i < arr_size; i++) {
-        if (arr_int[i] > maior) maior = arr_int[i];
-        if (arr_int[i] < menor) menor = arr_int[i];
-    }
-
-    int k = maior - menor + 1;
-    int arrC[k];
-
-    // coloca 0 em todo o  arrC
-    for (int i = 0; i < k; i++) {
-        arrC[i] = 0;
-    }
-
-    // contagem
-    for (int i = 0; i < arr_size; i++) {
-        arrC[arr_int[i] - menor]++;
-    }
-
-    // Cumulativa
-    for (int i = 1; i < k; i++) {
-        arrC[i] += arrC[i - 1];
-    }
-
-
-    int arrB[arr_size];
-    for (int i = arr_size - 1; i >= 0; i--) {
-        arrB[arrC[arr_int[i] - menor] - 1] = arr_int[i];
-        arrC[arr_int[i] - menor]--;
-    }
-
-    // aatualiza o arr original
-    for (int i = 0; i < arr_size; i++) {
-        arr[i] = arrB[i] * conversor;
-    }
-}
 
 
 
-}
+
+
+
+
