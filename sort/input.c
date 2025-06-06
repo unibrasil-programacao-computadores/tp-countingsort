@@ -34,7 +34,7 @@ void print_array(const double *arr, long vec_size)
 
     for (i = 1; i <= vec_size; ++i)
     {
-        printf("%lf  ", arr[i - 1]);
+        printf("%.0f  ", arr[i - 1]);
         if (!(i % NUMBERS_PER_LINE)) printf("\n");
     }
 }
