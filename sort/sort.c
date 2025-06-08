@@ -59,19 +59,15 @@ void countingsort(double* arr, long arr_size) {
 
     long k = (long)(maior - menor) + 1;
 
-    // `malloc` para evitar estouro de pilha
-    long* arrC = (long*)malloc(k * sizeof(long));
+    // caloc para evitar estouro de pilha
+    long* arrC = (long*)calloc(k, sizeof(long));
     if (!arrC) {
         printf("memoria insuficiente\n");
         return;
     }
 
-    //  `arrC` com zeros
-    for (long i = 0; i < k; i++){
-        arrC[i] = 0;
-    }
 
-    // prreencher arrC
+    // prreenche arrC com a frequencia que aparecem
     for (int i = 0; i < arr_size; i++) {
         arrC[(long)(arr[i] - menor)]++;
     }
@@ -81,7 +77,8 @@ void countingsort(double* arr, long arr_size) {
     int index = 0;
     for (long i = 0; i < k; i++) {
         while (arrC[i] > 0) {
-            arr[index++] = menor + i;
+            arr[index] = menor + i;
+            index++;
             arrC[i]--;
         }
     }

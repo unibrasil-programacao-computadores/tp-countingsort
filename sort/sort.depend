@@ -71,7 +71,7 @@
 1748970863 source:d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\counting-sort\sort.c
 	"sort.h"
 
-1746633577 source:d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\sort\input.c
+1749172336 source:d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\sort\input.c
 	"input.h"
 
 1748997951 d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\sort\input.h
@@ -79,13 +79,13 @@
 	<stdlib.h>
 	<time.h>
 
-1749172200 source:d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\sort\main.c
+1749337318 source:d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\sort\main.c
 	"sort.h"
 	"input.h"
 
-1749172193 d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\sort\sort.h
+1749337323 d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\sort\sort.h
 	<stdlib.h>
 
-1749172186 source:d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\sort\sort.c
+1749340923 source:d:\01 pessoal\unibrasil\tp0\tp-countingsort-main\sort\sort.c
 	"sort.h"
 
