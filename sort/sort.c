@@ -1,4 +1,8 @@
 #include "sort.h"
+#include <time.h>
+
+extern long long memoria_total_counting;
+
 
 int compare(const void* a, const void* b)
 {
@@ -44,6 +48,7 @@ void selectionsort(double* arr, long arr_size)
 
 void countingsort(double* arr, long arr_size) {
 
+
     double menor = arr[0];
     double maior = arr[0];
 
@@ -65,6 +70,8 @@ void countingsort(double* arr, long arr_size) {
         printf("memoria insuficiente\n");
         return;
     }
+
+     memoria_total_counting += k * sizeof(long); //so para contar memoria
 
 
     // prreenche arrC com a frequencia que aparecem
