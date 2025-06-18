@@ -1,4 +1,5 @@
 # tp-countingsort
+**O relatório esta com o nome Algoritmos de Ordenação(counting)**
 Repositório oficial da equipe Counting Sort para o TP2 - Algoritmos de Ordenação.
 Integrantes do grupo:
 Nome:Ravel Rodrigues de Camargo           Matricula:2024203247
